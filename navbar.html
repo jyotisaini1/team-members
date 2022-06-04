@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        #nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 98%;
+            height: 50px;
+            background-color: black;
+            border-radius: 13px;
+            margin: auto;
+            padding: 0px 10px;
+        }
+        #first{
+            color: white;
+            width: 5%;
+        }
+        #second{
+            width: 35%;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(4,1fr);
+            margin-right: -25px;
+        }
+        #second>div{
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div id="first">Reebok</div>
+        <div id="second">
+            <div>Men</div>
+            <div>Women</div>
+            <div>Login</div>
+            <div>Signup</div>
+        </div>
+    </div>
+</body>
+</html>
